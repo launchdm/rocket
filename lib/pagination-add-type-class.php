@@ -7,7 +7,7 @@
  */
 remove_filter( 'genesis_attr_archive-pagination', 'genesis_attributes_pagination' );
 
-add_filter( 'bsg-add-class', 'bsg_prev_next_or_numeric_archive_pagination', 10, 2 );
+add_filter( 'ldm-add-class', 'bsg_prev_next_or_numeric_archive_pagination', 10, 2 );
 
 function bsg_prev_next_or_numeric_archive_pagination( $classes_array, $context ) {
     if ( 'archive-pagination' !== $context ) {

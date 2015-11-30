@@ -16,7 +16,7 @@ add_filter( 'genesis_attr_site-footer',         'bsg_add_markup_class', 10, 2 );
 
 function bsg_add_markup_class( $attr, $context ) {
     // default classes to add
-    $classes_to_add = apply_filters ('bsg-classes-to-add',
+    $classes_to_add = apply_filters ('ldm-classes-to-add',
         // default bootstrap markup values
         array(
             'nav-primary'               => 'navbar',
@@ -25,8 +25,8 @@ function bsg_add_markup_class( $attr, $context ) {
             'site-inner'                => 'container',
             'site-footer'               => 'container',
             'content-sidebar-wrap'      => 'row',
-            'content'                   => 'col-sm-9',
-            'sidebar-primary'           => 'col-sm-3',
+            // 'content'                   => 'col-sm-9',
+            // 'sidebar-primary'           => 'col-sm-3',
             'archive-pagination'        => 'clearfix',
             'entry-content'             => 'clearfix',
             'entry-pagination'          => 'clearfix bsg-pagination-numeric',
@@ -45,7 +45,7 @@ function bsg_add_markup_class( $attr, $context ) {
     }
 
     // apply any filters to modify the class
-    $classes_array = apply_filters( 'bsg-add-class', $classes_array, $context, $attr );
+    $classes_array = apply_filters( 'ldm-add-class', $classes_array, $context, $attr );
 
     $classes_array = array_map( 'sanitize_html_class', $classes_array );
 
