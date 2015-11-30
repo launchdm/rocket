@@ -1,10 +1,10 @@
 {
-    "name": "bootstrap-genesis",
-    "version": "0.8.2",
-    "description": "Setup for work on Boostrap Genesis Child Theme",
+    "name": "rocket",
+    "version": "0.1.0",
+    "description": "Rocket Base Theme for Lauchpad",
     "repository" : {
         "type" : "git",
-        "url" : "https://github.com/salcode/bootstrap-genesis"
+        "url" : "https://github.com/launchdm/rocket"
     },
     "devDependencies": {
         "grunt": "~0.4.5",
