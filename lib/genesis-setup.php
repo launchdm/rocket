@@ -6,11 +6,23 @@ add_theme_support( 'html5' );
 // Remove structural Wraps
 remove_theme_support( 'genesis-structural-wraps' );
 
+// remove admin seo metabox from posts / pages
+remove_action( 'admin_menu', 'genesis_add_inpost_seo_box' );
+
+// remove seo settings menu from admin menu
+remove_theme_support( 'genesis-seo-settings-menu' );
+
+// remove admin scripts metabox from posts / pages
+remove_action( 'admin_menu', 'genesis_add_inpost_scripts_box' );
+
 // Remove item(s) from genesis admin screens
 add_action( 'genesis_admin_before_metaboxes', 'bsg_remove_genesis_theme_metaboxes' );
 
 // Remove item(s) from genesis customizer
 add_action( 'customize_register', 'bsg_remove_genesis_customizer_controls', 20 );
+
+// remove header sidebar
+unregister_sidebar( 'header-right' );
 
 /**
  * Remove selected Genesis metaboxes from the Theme Settings and SEO Settings pages.
