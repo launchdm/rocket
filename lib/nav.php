@@ -6,12 +6,6 @@ if (
 ) {
     return;
 }
-// remove primary & secondary nav from default position
-remove_action( 'genesis_after_header', 'genesis_do_nav' );
-remove_action( 'genesis_after_header', 'genesis_do_subnav' );
-// add primary & secondary nav to top of the page
-add_action( 'genesis_before', 'genesis_do_nav' );
-add_action( 'genesis_before', 'genesis_do_subnav' );
 
 // filter menu args for bootstrap walker and other settings
 add_filter( 'wp_nav_menu_args', 'bsg_nav_menu_args_filter' );
