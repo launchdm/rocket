@@ -7,6 +7,9 @@
 # include files in includes directory
 !/includes/
 
+# include files in lib directory
+!/lib/
+
 # include .editorconfig (i.e. do NOT ignore)
 !.editorconfig
 
