@@ -1,0 +1,16 @@
+{
+    "name": "rocket/launchdm",
+    "description": "A custom Genesis child theme by LaunchDM.",
+    "type": "wordpress-theme",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "launchdm",
+            "email": "web@launchdm.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {"Rocket\\": "lib/"}
+    }
+}
