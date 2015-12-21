@@ -4,6 +4,9 @@
 # include .gitignore (i.e. do NOT ignore)
 !.gitignore
 
+# include files in includes directory
+!/includes/
+
 # include .editorconfig (i.e. do NOT ignore)
 !.editorconfig
 
