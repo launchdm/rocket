@@ -14,6 +14,7 @@ css/style.min.css.map
 
 # compressed version of javascript (created with grunt / uglify)
 js/javascript.min.js
+js/javascript.min.js.map
 
 # ignore node/grunt dependencies
 # these are easily recreated on a new project
