@@ -21,3 +21,18 @@
     border: 1px solid $pagination-border;
     margin-left: -1px;
 }
+
+.pagination {
+
+    ul {
+        display: table;
+        margin: 5px auto;
+        padding: 0;
+    }
+
+    li {
+        display: inline-block;
+        padding: 7px 10px;
+        margin-right: 3px;
+    }
+}
