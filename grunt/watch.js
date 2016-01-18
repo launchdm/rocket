@@ -2,22 +2,15 @@ module.exports = {
 
     sass: {
         files: [
-            '<%= paths.sass.base %>/**/*.scss',
+            '<%= paths.styles.src %>/custom/*.scss',
+            '<%= paths.styles.src %>/custom/supporting/*.scss'
         ],
-        tasks: [ 'sass' ],
-        options: {
-            livereload: true,
-        },
+        tasks: ['sass:<%= build %>']
     },
-
     js: {
         files: [
-            '<%= paths.js.base %>/**/*.js',
-            '!<%= paths.js.base %>/**/*.min.js',
+            '<%= paths.scripts.src %>/custom/*.js'
         ],
-        tasks: [ 'uglify' ],
-        options: {
-            livereload: true,
-        },
-    },
+        tasks: ['uglify:<%= build %>']
+    }
 };
