@@ -5,10 +5,10 @@
 !*/
 
 # ingore css
-css/
+/css/
 
 # ignore js
-js/
+/js/
 
 # ignore files starting with "." ie: .DS_Store
 .*
