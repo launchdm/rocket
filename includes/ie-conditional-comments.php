@@ -3,9 +3,9 @@
 // remove default doctype
 // replace doctype/opening html tag with conditional comments doctype/opening html tag
 remove_action(  'genesis_doctype', 'genesis_do_doctype' );
-add_action(     'genesis_doctype', 'bsg_conditional_comments' );
+add_action(     'genesis_doctype', 'ldm_conditional_comments' );
 
-function bsg_conditional_comments() {
+function ldm_conditional_comments() {
    ?>
 <!doctype html>
 <!--[if lt IE 7 ]> <html class="ie ie6 no-js" dir="ltr" lang="en-US"> <![endif]-->
