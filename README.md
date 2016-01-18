@@ -9,12 +9,12 @@ Contributors
 
 Contributing
 ----------------------------------
-1. Fork repository :fork_and_knife:
-2. Clone forked repository into your development WordPress install ( pref. trunk ) :elephant:
-3. Configure upstream remote to stay up to date. :ocean:
+1. Fork repository
+2. Clone forked repository into your development WordPress install ( pref. trunk )
+3. Configure upstream remote to stay up to date.
 	- [Configuring a remote for a fork] (https://help.github.com/articles/configuring-a-remote-for-a-fork/)
 	- [Syncing a fork] (https://help.github.com/articles/syncing-a-fork/)
-4. Create PR to propose changes. :ring:
+4. Create PR to propose changes.
 
 License
 ----------------------------------
