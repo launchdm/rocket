@@ -1,5 +1,20 @@
 # ignore everything
-*
+/*
+
+# do not ignore subdirectories
+!*/
+
+# ingore css
+css/
+
+# ignore js
+js/
+
+# ignore files starting with "." ie: .DS_Store
+.*
+
+# ignore grunt node modules
+node_modules/
 
 # do not ignore the following files in theme root
 !.gitignore
@@ -12,11 +27,3 @@
 !README.md
 !screenshot.png
 !style.css
-
-# do not ignore the following directories in the the theme root
-!/resources/
-!/lib/
-!/fonts/
-!/grunt/
-!/images/
-!/includes/
