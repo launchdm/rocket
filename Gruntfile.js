@@ -1,28 +1,24 @@
- module.exports = function(grunt) {
+module.exports = function(grunt) {
 
-    require('time-grunt')(grunt); // Need to require
-    require('load-grunt-tasks')(grunt); // Load tasks automatically
-
+    require('load-grunt-tasks')(grunt);
     require('load-grunt-config')(grunt, {
 
         data: { // Define global variables in here
 
             pkg: grunt.file.readJSON('package.json'),
 
+            build: 'prod', // change for build type [dev, prod]
+
             paths: {
-
-                js : {
-                    base : 'js',
+                styles: {
+                    src: 'resources/sass',
+                    dist: 'css'
                 },
-
-                css : {
-                    base: 'css',
-                },
-
-                sass : {
-                    base: 'css/sass'
-                },
-            },
+                scripts : {
+                    src : 'resources/js',
+                    dist: 'js'
+                }
+            }
         }
     });
 };
