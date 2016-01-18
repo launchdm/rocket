@@ -1,13 +1,21 @@
 module.exports = {
 
-    theme: {
+    dev: {
         options: {
-            outputStyle : 'compressed',
-            sourceMap: true,
+            outputStyle: 'expanded',
+            sourceMap: true
         },
         files: {
-            '<%= paths.css.base %>/style.min.css':
-            '<%= paths.sass.base %>/style.scss'
+            '<%= paths.styles.dist %>/styles.min.css': '<%= paths.styles.src %>/custom/styles.scss'
+        }
+    },
+    prod: {
+        options: {
+            outputStyle: 'compressed',
+            sourceMap: true
+        },
+        files: {
+            '<%= paths.styles.dist %>/styles.min.css': '<%= paths.styles.src %>/custom/styles.scss'
         }
     }
 };

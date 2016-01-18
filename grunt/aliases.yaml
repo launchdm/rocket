@@ -1,8 +1,12 @@
 default:
-  - 'sass'
-  - 'uglify'
+  - 'sass:dev'
+  - 'uglify:dev'
   - 'watch'
 
 dev:
-  - 'sass'
-  - 'concat'
+  - 'sass:dev'
+  - 'uglify:dev'
+
+prod:
+  - 'sass:prod'
+  - 'uglify:prod'
