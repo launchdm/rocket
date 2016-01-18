@@ -27,3 +27,6 @@ function bsg_be_remove_genesis_page_templates( $page_templates ) {
 	unset( $page_templates['page_blog.php'] );
 	return $page_templates;
 }
+
+// Add viewport meta tag for mobile browsers
+add_theme_support( 'genesis-responsive-viewport' );
