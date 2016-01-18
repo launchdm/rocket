@@ -17,8 +17,8 @@ if( file_exists( $rocket_autoload ) ){
  * https://gist.github.com/theandystratton/5924570
  */
 
-add_action( 'genesis_setup', 'bsg_load_lib_files', 15 );
-function bsg_load_lib_files() {
+add_action( 'genesis_setup', 'ldm_load_include_files', 15 );
+function ldm_load_include_files() {
 
-    foreach ( glob( dirname( __FILE__ ) . '/lib/*.php' ) as $file ) { include $file; }
+    foreach ( glob( dirname( __FILE__ ) . '/includes/*.php' ) as $file ) { include $file; }
 }

@@ -1,20 +1,20 @@
 <?php
 
 // add bootstrap classes
-add_filter( 'genesis_attr_nav-primary',         'bsg_add_markup_class', 10, 2 );
-add_filter( 'genesis_attr_nav-secondary',       'bsg_add_markup_class', 10, 2 );
-add_filter( 'genesis_attr_site-header',         'bsg_add_markup_class', 10, 2 );
-add_filter( 'genesis_attr_site-inner',          'bsg_add_markup_class', 10, 2 );
-add_filter( 'genesis_attr_content-sidebar-wrap','bsg_add_markup_class', 10, 2 );
-add_filter( 'genesis_attr_content',             'bsg_add_markup_class', 10, 2 );
-add_filter( 'genesis_attr_sidebar-primary',     'bsg_add_markup_class', 10, 2 );
-add_filter( 'genesis_attr_sidebar-secondary',   'bsg_add_markup_class', 10, 2 );
-add_filter( 'genesis_attr_archive-pagination',  'bsg_add_markup_class', 10, 2 );
-add_filter( 'genesis_attr_entry-content',       'bsg_add_markup_class', 10, 2 );
-add_filter( 'genesis_attr_entry-pagination',    'bsg_add_markup_class', 10, 2 );
-add_filter( 'genesis_attr_site-footer',         'bsg_add_markup_class', 10, 2 );
+add_filter( 'genesis_attr_nav-primary',         'ldm_add_markup_class', 10, 2 );
+add_filter( 'genesis_attr_nav-secondary',       'ldm_add_markup_class', 10, 2 );
+add_filter( 'genesis_attr_site-header',         'ldm_add_markup_class', 10, 2 );
+add_filter( 'genesis_attr_site-inner',          'ldm_add_markup_class', 10, 2 );
+add_filter( 'genesis_attr_content-sidebar-wrap','ldm_add_markup_class', 10, 2 );
+add_filter( 'genesis_attr_content',             'ldm_add_markup_class', 10, 2 );
+add_filter( 'genesis_attr_sidebar-primary',     'ldm_add_markup_class', 10, 2 );
+add_filter( 'genesis_attr_sidebar-secondary',   'ldm_add_markup_class', 10, 2 );
+add_filter( 'genesis_attr_archive-pagination',  'ldm_add_markup_class', 10, 2 );
+add_filter( 'genesis_attr_entry-content',       'ldm_add_markup_class', 10, 2 );
+add_filter( 'genesis_attr_entry-pagination',    'ldm_add_markup_class', 10, 2 );
+add_filter( 'genesis_attr_site-footer',         'ldm_add_markup_class', 10, 2 );
 
-function bsg_add_markup_class( $attr, $context ) {
+function ldm_add_markup_class( $attr, $context ) {
     // default classes to add
     $classes_to_add = apply_filters ('ldm-classes-to-add',
         // default bootstrap markup values
@@ -29,7 +29,7 @@ function bsg_add_markup_class( $attr, $context ) {
             // 'sidebar-primary'           => 'col-sm-3',
             'archive-pagination'        => 'clearfix',
             'entry-content'             => 'clearfix',
-            'entry-pagination'          => 'clearfix bsg-pagination-numeric',
+            'entry-pagination'          => 'clearfix ldm-pagination-numeric',
         ),
         $context,
         $attr

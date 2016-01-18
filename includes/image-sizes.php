@@ -1,2 +1,2 @@
 <?php
-    add_image_size( 'bsg-featured-image', 1170, 630, true );
+    add_image_size( 'rocket-featured-image', 1170, 630, true );
