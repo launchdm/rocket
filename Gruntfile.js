@@ -1,6 +1,8 @@
 module.exports = function(grunt) {
 
-    require('load-grunt-tasks')(grunt);
+    require('jit-grunt')(grunt)({
+      customTasksDir: 'grunt'
+    });
     require('load-grunt-config')(grunt, {
 
         data: { // Define global variables in here
